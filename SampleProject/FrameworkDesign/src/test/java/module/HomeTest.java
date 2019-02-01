@@ -66,13 +66,31 @@ public class HomeTest extends Base{
 	 
 	}
 	
-	@Test
+	@Test(enabled=false)
 	public void togetWebTable() throws IOException, InterruptedException
 	{
 	 Home obj = new Home();
 	 obj.toClickOnLinkText(dr);
 	 obj.toSelectSummaryTable(dr);
 	}
+	
+	@Test(enabled=false)
+	public void toMouseHoverOnTutorial() throws IOException, InterruptedException
+	{
+	 Home obj = new Home();
+	 obj.toHoverTutorial(dr);
+	
+	}
+	
+	
+	@Test
+	public void validateSupportEmail() throws IOException, InterruptedException
+	{
+	 Home obj = new Home();
+	 obj.toValidateSupportEmail(dr);
+	
+	}
+	
 	
 
 }

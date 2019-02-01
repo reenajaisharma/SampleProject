@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="5" total="6" passed="1">
+<testng-results skipped="0" failed="0" ignored="8" total="9" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="92379" started-at="2019-02-01T06:44:22Z" finished-at="2019-02-01T06:45:55Z">
+  <suite name="Default suite" duration-ms="33442" started-at="2019-02-01T16:15:45Z" finished-at="2019-02-01T16:16:19Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="92379" started-at="2019-02-01T06:44:22Z" finished-at="2019-02-01T06:45:55Z">
+    <test name="Default test" duration-ms="33442" started-at="2019-02-01T16:15:45Z" finished-at="2019-02-01T16:16:19Z">
       <class name="module.HomeTest">
-        <test-method status="PASS" signature="befmet()[pri:0, instance:module.HomeTest@4c70fda8]" name="befmet" is-config="true" duration-ms="36079" started-at="2019-02-01T06:44:22Z" finished-at="2019-02-01T06:44:58Z">
+        <test-method status="PASS" signature="befmet()[pri:0, instance:module.HomeTest@46d56d67]" name="befmet" is-config="true" duration-ms="31869" started-at="2019-02-01T16:15:46Z" finished-at="2019-02-01T16:16:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- befmet -->
-        <test-method status="PASS" signature="toEnterPracticeForm()[pri:0, instance:module.HomeTest@4c70fda8]" name="toEnterPracticeForm" duration-ms="56201" started-at="2019-02-01T06:44:58Z" finished-at="2019-02-01T06:45:55Z">
+        <test-method status="PASS" signature="validateSupportEmail()[pri:0, instance:module.HomeTest@46d56d67]" name="validateSupportEmail" duration-ms="1208" started-at="2019-02-01T16:16:18Z" finished-at="2019-02-01T16:16:19Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- toEnterPracticeForm -->
-        <test-method status="PASS" signature="aftmet()[pri:0, instance:module.HomeTest@4c70fda8]" name="aftmet" is-config="true" duration-ms="0" started-at="2019-02-01T06:45:55Z" finished-at="2019-02-01T06:45:55Z">
+        </test-method> <!-- validateSupportEmail -->
+        <test-method status="PASS" signature="aftmet()[pri:0, instance:module.HomeTest@46d56d67]" name="aftmet" is-config="true" duration-ms="0" started-at="2019-02-01T16:16:19Z" finished-at="2019-02-01T16:16:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftmet -->

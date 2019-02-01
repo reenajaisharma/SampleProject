@@ -6,10 +6,13 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.List;
 import java.util.Properties;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
@@ -157,6 +160,46 @@ public class Home {
 				}
 			}
 		}
+	}
+	
+	
+	public void toHoverTutorial(WebDriver dr)
+	{
+		String tutorialMenu = prop.getProperty("tutorialMenu");
+		
+		//Actions class for MouseHover functionality
+		
+		Actions action=new Actions(dr);
+		action.moveToElement(dr.findElement(By.xpath(prop.getProperty("tutorialMenu")))).build().perform();
+		WebElement ele = dr.findElement(By.xpath(prop.getProperty("softwareTestingTutorial")));
+		ele.click();
+	}
+	
+	
+	public void toValidateSupportEmail(WebDriver dr)
+	{
+		String supprtEmail = prop.getProperty("supprtEmail");
+		
+		
+		String str=dr.findElement(By.xpath(supprtEmail)).getText();
+		
+		//String str="support@toolsqa.com";
+		
+		//support@toolsqa.com
+		//String pattern = "[a-zA-Z]+";
+		String pattern="([a-zA-Z]+)@([a-zA-Z]+)\\.([a-zA-Z]+)";
+		Pattern p = Pattern.compile(pattern);
+		Matcher m = p.matcher(str);
+		while(m.find())
+		{
+			System.out.print(m.group());
+		}
+		
+		// String s = "humbapumpa jim";
+	     //   Assert.assertTrue(s.matches(".*(jim|joe).*"));
+		System.out.println("pattern  :" + pattern);
+		
+		   Assert.assertTrue(str.matches(pattern));
 	}
 	
 

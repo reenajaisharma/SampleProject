@@ -6,8 +6,8 @@
       <class name="module.HomeTest">
         <methods>
           <include name="befmet"/>
-          <include name="toEnterMaleFemale"/>
           <include name="aftmet"/>
+          <include name="validateSupportEmail"/>
         </methods>
       </class> <!-- module.HomeTest -->
     </classes>
