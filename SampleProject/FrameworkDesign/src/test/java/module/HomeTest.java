@@ -52,7 +52,7 @@ public class HomeTest extends Base{
 		
 	}
 	
-	@Test
+	@Test(enabled=false)
 	public void toEnterPracticeForm() throws IOException, InterruptedException
 	{
 	 Home obj = new Home();
@@ -66,6 +66,13 @@ public class HomeTest extends Base{
 	 
 	}
 	
+	@Test
+	public void togetWebTable() throws IOException, InterruptedException
+	{
+	 Home obj = new Home();
+	 obj.toClickOnLinkText(dr);
+	 obj.toSelectSummaryTable(dr);
+	}
 	
 
 }

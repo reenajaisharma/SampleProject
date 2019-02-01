@@ -134,4 +134,30 @@ public class Home {
 	}
 	
 
+	public void toSelectSummaryTable(WebDriver dr)
+	{
+		String sampleTab = prop.getProperty("sampleTable");
+		
+		WebElement htmlTable= dr.findElement(By.xpath(sampleTab));
+		
+		List <WebElement> rows = htmlTable.findElements(By.tagName("tr"));
+		
+		for(int i=0;i<rows.size();i++)
+		{
+			List <WebElement> columns = rows.get(i).findElements(By.tagName("td"));
+			
+			for(int j=0;j<columns.size();j++)
+			{
+				
+				
+				if(columns.get(j).getText().equals("details"))
+				{
+					String txt =columns.get(j).getText();
+					System.out.println( txt);
+				}
+			}
+		}
+	}
+	
+
 }
