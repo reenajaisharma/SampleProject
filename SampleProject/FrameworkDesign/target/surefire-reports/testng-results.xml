@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="5" total="6" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-02-01T07:59:48Z" name="module.HomeTest" finished-at="2019-02-01T08:01:20Z" duration-ms="92360">
+    <groups>
+    </groups>
+    <test started-at="2019-02-01T07:59:48Z" name="Command line test" finished-at="2019-02-01T08:01:20Z" duration-ms="92360">
+      <class name="module.HomeTest">
+        <test-method is-config="true" signature="befmet()[pri:0, instance:module.HomeTest@6d2a209c]" started-at="2019-02-01T07:59:48Z" name="befmet" finished-at="2019-02-01T08:00:18Z" duration-ms="30493" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befmet -->
+        <test-method signature="toEnterPracticeForm()[pri:0, instance:module.HomeTest@6d2a209c]" started-at="2019-02-01T08:00:18Z" name="toEnterPracticeForm" finished-at="2019-02-01T08:01:20Z" duration-ms="61775" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toEnterPracticeForm -->
+        <test-method is-config="true" signature="aftmet()[pri:0, instance:module.HomeTest@6d2a209c]" started-at="2019-02-01T08:01:20Z" name="aftmet" finished-at="2019-02-01T08:01:20Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftmet -->
+      </class> <!-- module.HomeTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- module.HomeTest -->
+</testng-results>
